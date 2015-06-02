@@ -85,6 +85,7 @@
     <Compile Include="Caching\CacheService.cs" />
     <Compile Include="Generators\RandomStringGenerator.cs" />
     <Compile Include="Generators\SlugGenerator.cs" />
+    <Compile Include="Io\FileOrFolderExtensions.cs" />
     <Compile Include="Mvc\CustomBinders\BindingContextValueExtensions.cs" />
     <Compile Include="Mvc\CustomResults\RssActionResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
