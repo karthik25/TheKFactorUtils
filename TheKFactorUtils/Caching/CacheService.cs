@@ -21,5 +21,14 @@ namespace TheKFactorUtils.Caching
             }
             return item;
         }
+
+        public void Set(string cacheId, object data, int duration = 5)
+        {
+            HttpContext.Current.Cache.Insert(cacheId,
+                                                 data,
+                                                 null,
+                                                 DateTime.Now.AddMinutes(duration),
+                                                 Cache.NoSlidingExpiration);
+        }
     }
 }
