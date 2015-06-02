@@ -81,6 +81,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\ICacheService.cs" />
+    <Compile Include="Caching\CacheService.cs" />
     <Compile Include="Generators\RandomStringGenerator.cs" />
     <Compile Include="Generators\SlugGenerator.cs" />
     <Compile Include="Mvc\CustomBinders\BindingContextValueExtensions.cs" />
