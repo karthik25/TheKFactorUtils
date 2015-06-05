@@ -9,4 +9,5 @@ Currently, the following utilities are available!
 * File or Folder extensions
 * MVC - Custom Model Binding Helpers
 * MVC - Custom Action Results
-
+* Regex - Helper method to enumerate on matched values of groups (if the regex has matching groups)
+* Regex - Helper methods to get the 1st or nth match only (if the regex has matching groups)
