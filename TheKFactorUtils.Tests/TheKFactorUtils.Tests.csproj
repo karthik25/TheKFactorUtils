@@ -53,6 +53,7 @@
     <Compile Include="Generators\SlugGeneratorTests.cs" />
     <Compile Include="Generators\RandomStringGeneratorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegEx\RegExUtilTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TheKFactorUtils\TheKFactorUtils.csproj">

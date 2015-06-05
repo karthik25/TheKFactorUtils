@@ -89,6 +89,7 @@
     <Compile Include="Mvc\CustomBinders\BindingContextValueExtensions.cs" />
     <Compile Include="Mvc\CustomResults\RssActionResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegexUtils\RegExUtil.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
