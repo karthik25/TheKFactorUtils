@@ -22,5 +22,23 @@ namespace TheKFactorUtils.Tests.RegEx
                 index++;
             }
         }
+
+        [TestMethod]
+        public void CanGetNthMatch()
+        {
+            var regex = new Regex(@"(\d+)\-(\d+)\-(\d+)");
+            const string src = "987-654-3210";
+            var firstMatchedValue = src.GetNthMatch(regex, 1);
+            Assert.AreEqual("654", firstMatchedValue);
+        }
+
+        [TestMethod]
+        public void CanGetFirstMatch()
+        {
+            var regex = new Regex(@"(\d+)\-(\d+)\-(\d+)");
+            const string src = "987-654-3210";
+            var firstMatchedValue = src.GetFirstMatch(regex);
+            Assert.AreEqual("987", firstMatchedValue);            
+        }
     }
 }
