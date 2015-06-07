@@ -74,6 +74,7 @@
     <Compile Include="HtmlHelpers\HtmlHelperExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Routing\GenericRouteDataWrapper.cs" />
+    <Compile Include="Routing\PropertyNameModifier.cs" />
     <Compile Include="Routing\RouteDataWrapper.cs" />
   </ItemGroup>
   <ItemGroup>

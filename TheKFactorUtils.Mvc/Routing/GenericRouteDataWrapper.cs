@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 using System.Web.Routing;
@@ -26,7 +27,7 @@ namespace TheKFactorUtils.Mvc.Routing
             foreach (var propertyInfo in properties)
             {
                 var propName = propertyInfo.Name;
-                var value = _routeData.Values.ContainsKey(propName) ? _routeData.Values[propName] : null;
+                var value = GetSafeValue(propName);
                 propertyInfo.SetValue(instance, value);
             }
             return instance;
@@ -46,7 +47,14 @@ namespace TheKFactorUtils.Mvc.Routing
                 throw new ArgumentException("The expression's body must identify a property, not a field or other member.", "propertySelector");
 
             var propName = prop.Name;
-            return _routeData.Values[propName].ToString();
+            return GetSafeValue(propName);
+        }
+
+        private string GetSafeValue(string propName)
+        {
+            return (from name in propName.GetModifiedPropertyNames() 
+                    where _routeData.Values.ContainsKey(name) 
+                    select _routeData.Values[name].ToString()).FirstOrDefault();
         }
     }
 }
