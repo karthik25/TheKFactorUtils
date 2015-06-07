@@ -71,6 +71,7 @@
   <ItemGroup>
     <Compile Include="CustomBinders\BindingContextValueExtensions.cs" />
     <Compile Include="CustomResults\RssActionResult.cs" />
+    <Compile Include="HtmlHelpers\HtmlHelperExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
