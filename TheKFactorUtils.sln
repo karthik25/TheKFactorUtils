@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheKFactorUtils", "TheKFact
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheKFactorUtils.Tests", "TheKFactorUtils.Tests\TheKFactorUtils.Tests.csproj", "{148F615E-BCAB-4197-9392-8CE60B8A679A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheKFactorUtils.Mvc", "TheKFactorUtils.Mvc\TheKFactorUtils.Mvc.csproj", "{AC227972-FC11-4D18-AEF5-C9F9E4210510}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{148F615E-BCAB-4197-9392-8CE60B8A679A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{148F615E-BCAB-4197-9392-8CE60B8A679A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{148F615E-BCAB-4197-9392-8CE60B8A679A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC227972-FC11-4D18-AEF5-C9F9E4210510}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC227972-FC11-4D18-AEF5-C9F9E4210510}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC227972-FC11-4D18-AEF5-C9F9E4210510}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC227972-FC11-4D18-AEF5-C9F9E4210510}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
