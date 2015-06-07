@@ -1,4 +1,5 @@
-﻿using System.Web.Routing;
+﻿using System.Linq;
+using System.Web.Routing;
 
 namespace TheKFactorUtils.Mvc.Routing
 {
@@ -24,6 +25,18 @@ namespace TheKFactorUtils.Mvc.Routing
         public RouteValueDictionary Values
         {
             get { return _routeData.Values; }
+        }
+
+        public string this[string key]
+        {
+            get { return _routeData.Values.ContainsKey(key) ? _routeData.Values[key].ToString() : null; }
+        }
+
+        protected string GetSafeValue(string propName)
+        {
+            return (from name in propName.GetModifiedPropertyNames()
+                    where _routeData.Values.ContainsKey(name)
+                    select _routeData.Values[name].ToString()).FirstOrDefault();
         }
     }    
 }

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 using System.Web.Routing;
@@ -48,13 +47,6 @@ namespace TheKFactorUtils.Mvc.Routing
 
             var propName = prop.Name;
             return GetSafeValue(propName);
-        }
-
-        private string GetSafeValue(string propName)
-        {
-            return (from name in propName.GetModifiedPropertyNames() 
-                    where _routeData.Values.ContainsKey(name) 
-                    select _routeData.Values[name].ToString()).FirstOrDefault();
         }
     }
 }
