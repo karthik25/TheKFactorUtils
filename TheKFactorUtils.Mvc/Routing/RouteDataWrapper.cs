@@ -21,4 +21,13 @@ namespace TheKFactorUtils.Mvc.Routing
             get { return _routeData.Values["action"].ToString(); }
         }
     }
+
+    public class RouteDataWrapper<T> : RouteDataWrapper
+    {
+        public RouteDataWrapper(RouteData routeData) 
+            : base(routeData)
+        {
+            
+        }
+    }
 }
