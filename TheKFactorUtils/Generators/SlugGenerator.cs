@@ -6,6 +6,11 @@ namespace TheKFactorUtils.Generators
 {
     public static class SlugGenerator
     {
+        public static string GetUniqueSlug(this string rawString)
+        {
+            return rawString.GetUniqueSlug(new List<string>());
+        }
+
         public static string GetUniqueSlug(this string rawString, List<string> currentUrls)
         {
             var regex = new Regex(@"[^a-zA-Z 0-9\.\-]+");
