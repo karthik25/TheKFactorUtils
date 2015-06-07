@@ -13,11 +13,7 @@ namespace TheKFactorUtils.Caching
             if (item == null)
             {
                 item = getItemCallback();
-                HttpContext.Current.Cache.Insert(cacheId,
-                                                 item,
-                                                 null,
-                                                 DateTime.Now.AddMinutes(duration),
-                                                 Cache.NoSlidingExpiration);
+                this.Set(cacheId, item, duration);
             }
             return item;
         }
@@ -25,10 +21,10 @@ namespace TheKFactorUtils.Caching
         public void Set(string cacheId, object data, int duration = 5)
         {
             HttpContext.Current.Cache.Insert(cacheId,
-                                                 data,
-                                                 null,
-                                                 DateTime.Now.AddMinutes(duration),
-                                                 Cache.NoSlidingExpiration);
+                                             data,
+                                             null,
+                                             DateTime.Now.AddMinutes(duration),
+                                             Cache.NoSlidingExpiration);
         }
     }
 }
