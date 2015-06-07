@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheKFactorUtils.Tests", "Th
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheKFactorUtils.Mvc", "TheKFactorUtils.Mvc\TheKFactorUtils.Mvc.csproj", "{AC227972-FC11-4D18-AEF5-C9F9E4210510}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheKFactorUtils.Mocks", "TheKFactorUtils.Mocks\TheKFactorUtils.Mocks.csproj", "{FF248316-53CA-4F23-A4D3-62722939E4F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{AC227972-FC11-4D18-AEF5-C9F9E4210510}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC227972-FC11-4D18-AEF5-C9F9E4210510}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC227972-FC11-4D18-AEF5-C9F9E4210510}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF248316-53CA-4F23-A4D3-62722939E4F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF248316-53CA-4F23-A4D3-62722939E4F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF248316-53CA-4F23-A4D3-62722939E4F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF248316-53CA-4F23-A4D3-62722939E4F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
