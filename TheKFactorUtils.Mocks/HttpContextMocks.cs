@@ -12,7 +12,7 @@ namespace TheKFactorUtils.Mocks
 {
     public static class HttpContextMocks
     {
-        public static HttpContextBase GetMockContext(int userId, bool isAuthenticated, IIdentity identity = null, string url = null)
+        public static HttpContextBase GetMockContext(int userId, bool isAuthenticated, string url = null, IIdentity identity = null)
         {
             var context = new Mock<HttpContextBase>();
 
