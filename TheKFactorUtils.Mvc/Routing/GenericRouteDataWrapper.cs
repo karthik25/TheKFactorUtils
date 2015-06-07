@@ -14,7 +14,7 @@ namespace TheKFactorUtils.Mvc.Routing
 
         }
 
-        public T CustomRouteData
+        public T Instance
         {
             get { return CreateInstance(); }
         }
