@@ -54,10 +54,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\ICacheService.cs" />
+    <Compile Include="Abstract\IPathMapper.cs" />
     <Compile Include="Caching\CacheService.cs" />
     <Compile Include="Generators\RandomStringGenerator.cs" />
     <Compile Include="Generators\SlugGenerator.cs" />
     <Compile Include="Io\FileOrFolderExtensions.cs" />
+    <Compile Include="Io\PathMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegexUtils\RegExUtil.cs" />
   </ItemGroup>
